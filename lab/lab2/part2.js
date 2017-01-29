@@ -18,3 +18,24 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+// FizzBuzz challenge. Week 2, lab 1, part 2
+_.each(_.range(1, 101), function(num) {
+    if (num % 3 == 0 && num % 5 == 0) {
+        console.log("FizzBuzz")
+    } else if (num % 5 == 0) {
+        console.log("Buzz")
+    } else if (num % 3 == 0) {
+        console.log("Fizz")
+    } else {
+        console.log(num)
+    }
+});
+
+// Project Euler. Week 2, lab 1, part 5
+var sum_value = 0;
+_.each(_.range(1, 1000), function(num) {
+    if (num % 5 == 0 || num % 3 == 0) {
+        sum_value += num
+    }
+});
+console.log(sum_value);
